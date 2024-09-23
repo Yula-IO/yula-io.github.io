@@ -4,7 +4,7 @@ import scrapy
 
 class BlogSpider(scrapy.Spider):
     name = 'blogspider'
-    start_urls = ['https://yula-io.github.io/']
+    start_urls = ['/']
 
     def parse(self, response):
         for title in response.css('.oxy-post-title'):
